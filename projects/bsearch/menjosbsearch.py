@@ -160,3 +160,25 @@ def bsearch(mylist,x):
             
 print bsearch([0,6,98,1,4,88,33,91,43,90,78],0)
 #code ends
+
+#oreo code begins
+def bsearch(blist,searchElement):       
+    blist.sort()
+    if blist == []:
+        return -1
+    initial_index=0
+    final_index = len(blist)-1
+    while initial_index < final_index:
+        midpoint = (initial_index + final_index)/2
+        if blist[midpoint] == searchElement:
+            return len(blist)/2
+            break
+        elif blist[midpoint]  > searchElement:
+            final_index = midpoint-1
+        elif blist[midpoint] < searchElement:
+            initial_index = midpoint+1
+        elif searchElement in blist != True:
+            print "value not in list"
+            
+print bsearch([1,65,43,23,5,76,3,46,87,23,67,78],23)
+#oreo code ends
