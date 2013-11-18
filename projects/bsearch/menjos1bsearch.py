@@ -9,9 +9,9 @@
 
 
 
-mylist=[0,6,98,1,4,88,33,91,43,90,78]
+#selina jones code
 mylist.sort()
-print mylist
+mylist
 
 
 def bsearch(mylist,x):
@@ -33,4 +33,4 @@ def bsearch(mylist,x):
             return mid
     return -1
             
-print bsearch([0,6,98,1,4,88,33,91,43,90,78],0)
+bsearch([0,6,98,1,4,88,33,91,43,90,78],0)
